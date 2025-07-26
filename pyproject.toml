@@ -1,0 +1,15 @@
+[project]
+name = "dbd-course"
+dynamic = [ "version" ]
+requires-python = ">=3.9,<3.13"
+authors = [
+    { name = "Fabio Oliveira", email = "fabio.oliveira1403@outlook.com" },
+]
+
+[tool.poetry]
+version = "1.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.13"
+dbt-snowflake = "1.9.0"

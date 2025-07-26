@@ -1,0 +1,24 @@
+# O source yml é um arquivo de abstração pro caminho e os nomes das tabelas que queremos selecionar, 
+# ele faz com que possamos colocar um nome mais amigável para as tabelas que chamaremos nos nossos 
+# modelos.
+version: 2
+
+sources:
+  - name: airbnb
+    schema: raw
+    tables:
+      - name: listings
+        identifier: raw_listings
+
+      - name: hosts
+        identifier: raw_hosts
+
+      - name: reviews
+        identifier: raw_reviews
+        loaded_at_field: date
+        config:
+          # Essa configuração faz com que o dbt alerte quando os dados estiverem desatualizados em no minimo 1h.
+          # E apresente erro quando os dados estiverem desatualizados em um dia (24h).
+          freshness:
+            warn_after: {count: 1, period: hour}
+            error_after: {count: 24, period: hour}

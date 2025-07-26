@@ -1,0 +1,10 @@
+Tipos de Materializações:
+views
+table
+incremental
+ephorial
+
+Seed and sources:
+Seed é todos os dados que vem de fontes locais e são jogados no Datawarehouse.
+Sources São os dados que já estão presentes no Datawarehouse
+

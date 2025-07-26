@@ -1,0 +1,5 @@
+dbt run              # Esse comando carrega todos os modelos presente no dbt
+dbt seed             # Carrega todos os seeds (Arquivos Locais enviados pelo dbt ao datawarehouse)
+dbt compile          # Verifica se nao tem nenhum erro de compliação no seu codigo dbt
+dbt source freshness # Analisa o tempo da defasagem das cargas conforme configurado (configurado em sources.yml) 
+
