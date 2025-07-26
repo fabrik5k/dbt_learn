@@ -1,4 +1,8 @@
+# Python
+.venv/
+poetry.lock
 
+# DBT
 target/
 dbt_packages/
 logs/
