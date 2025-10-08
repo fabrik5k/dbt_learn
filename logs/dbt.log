@@ -1,0 +1,365 @@
+[0m17:42:51.941966 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7d4994f310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7d4994ed50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7d4994f250>]}
+
+
+============================== 17:42:51.944231 | 18b4bab4-3ba7-45e6-8dc9-9d6ca99510e5 ==============================
+[0m17:42:51.944231 [info ] [MainThread]: Running with dbt=1.10.5
+[0m17:42:51.944718 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/home/fabio_oliveira/.dbt', 'log_path': '/home/fabio_oliveira/Git/dbt_learn/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run-operation learn_logging', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:42:52.247584 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '18b4bab4-3ba7-45e6-8dc9-9d6ca99510e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7d48233a50>]}
+[0m17:42:52.298571 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '18b4bab4-3ba7-45e6-8dc9-9d6ca99510e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7d484ec650>]}
+[0m17:42:52.299267 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m17:42:52.372367 [debug] [MainThread]: checksum: fa4c2685620973c5adba0a491aa9c06e8cf48c9113a5280b45b6efa706ae8f4b, vars: {}, profile: , target: , version: 1.10.5
+[0m17:42:52.524501 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:42:52.524888 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:42:52.599827 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '18b4bab4-3ba7-45e6-8dc9-9d6ca99510e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7d47ffe710>]}
+[0m17:42:52.722557 [debug] [MainThread]: Wrote artifact WritableManifest to /home/fabio_oliveira/Git/dbt_learn/target/manifest.json
+[0m17:42:52.723977 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/fabio_oliveira/Git/dbt_learn/target/semantic_manifest.json
+[0m17:42:52.732233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '18b4bab4-3ba7-45e6-8dc9-9d6ca99510e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7d482cda50>]}
+[0m17:42:52.732705 [info ] [MainThread]: Found 8 models, 1 snapshot, 1 analysis, 16 data tests, 1 seed, 3 sources, 1 exposure, 663 macros
+[0m17:42:52.733049 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '18b4bab4-3ba7-45e6-8dc9-9d6ca99510e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7d482d58d0>]}
+[0m17:42:52.733596 [debug] [MainThread]: Acquiring new snowflake connection 'macro_learn_logging'
+[0m17:42:52.737062 [debug] [MainThread]: Call your mom
+[0m17:42:52.742230 [debug] [MainThread]: Wrote artifact RunResultsArtifact to /home/fabio_oliveira/Git/dbt_learn/target/run_results.json
+[0m17:42:52.742912 [debug] [MainThread]: Resource report: {"command_name": "run-operation", "command_success": true, "command_wall_clock_time": 0.84424675, "process_in_blocks": "0", "process_kernel_time": 0.126119, "process_mem_max_rss": "135972", "process_out_blocks": "1576", "process_user_time": 1.759669}
+[0m17:42:52.743452 [debug] [MainThread]: Command `dbt run-operation` succeeded at 17:42:52.743367 after 0.84 seconds
+[0m17:42:52.743783 [debug] [MainThread]: Connection 'macro_learn_logging' was properly closed.
+[0m17:42:52.744142 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7d49a7e5d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7d47f87510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7d47f84150>]}
+[0m17:42:52.744530 [debug] [MainThread]: Flushing usage events
+[0m17:42:53.489802 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:46:19.380664 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd3729b750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd3729ba10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd3729bf50>]}
+
+
+============================== 17:46:19.382882 | 40958a11-6289-4cf1-b88c-23c07590211e ==============================
+[0m17:46:19.382882 [info ] [MainThread]: Running with dbt=1.10.5
+[0m17:46:19.383400 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/home/fabio_oliveira/Git/dbt_learn/logs', 'version_check': 'True', 'profiles_dir': '/home/fabio_oliveira/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run-operation learn_logging', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m17:46:19.685625 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '40958a11-6289-4cf1-b88c-23c07590211e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd35b8d210>]}
+[0m17:46:19.737451 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '40958a11-6289-4cf1-b88c-23c07590211e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd35df8c50>]}
+[0m17:46:19.738122 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m17:46:19.812781 [debug] [MainThread]: checksum: fa4c2685620973c5adba0a491aa9c06e8cf48c9113a5280b45b6efa706ae8f4b, vars: {}, profile: , target: , version: 1.10.5
+[0m17:46:19.966856 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m17:46:19.967432 [debug] [MainThread]: Partial parsing: updated file: dbtlearn://macros/logging.sql
+[0m17:46:20.087598 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '40958a11-6289-4cf1-b88c-23c07590211e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd3578ec90>]}
+[0m17:46:20.210407 [debug] [MainThread]: Wrote artifact WritableManifest to /home/fabio_oliveira/Git/dbt_learn/target/manifest.json
+[0m17:46:20.211846 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/fabio_oliveira/Git/dbt_learn/target/semantic_manifest.json
+[0m17:46:20.219957 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '40958a11-6289-4cf1-b88c-23c07590211e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd35b35d50>]}
+[0m17:46:20.220439 [info ] [MainThread]: Found 8 models, 1 snapshot, 1 analysis, 16 data tests, 1 seed, 3 sources, 1 exposure, 663 macros
+[0m17:46:20.220779 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '40958a11-6289-4cf1-b88c-23c07590211e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd359da390>]}
+[0m17:46:20.221284 [debug] [MainThread]: Acquiring new snowflake connection 'macro_learn_logging'
+[0m17:46:20.224757 [info ] [MainThread]: Call your mom!
+[0m17:46:20.230313 [debug] [MainThread]: Wrote artifact RunResultsArtifact to /home/fabio_oliveira/Git/dbt_learn/target/run_results.json
+[0m17:46:20.231007 [debug] [MainThread]: Resource report: {"command_name": "run-operation", "command_success": true, "command_wall_clock_time": 0.89390606, "process_in_blocks": "0", "process_kernel_time": 0.137131, "process_mem_max_rss": "136752", "process_out_blocks": "3016", "process_user_time": 1.810409}
+[0m17:46:20.231542 [debug] [MainThread]: Command `dbt run-operation` succeeded at 17:46:20.231454 after 0.89 seconds
+[0m17:46:20.231869 [debug] [MainThread]: Connection 'macro_learn_logging' was properly closed.
+[0m17:46:20.232206 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd382c92d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd37299c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd358c7e50>]}
+[0m17:46:20.232610 [debug] [MainThread]: Flushing usage events
+[0m17:46:20.978346 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:58:33.867940 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa213e61ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa214224f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa213e631d0>]}
+
+
+============================== 21:58:33.871357 | 388af7d6-c906-486e-bd3a-dcdc38459988 ==============================
+[0m21:58:33.871357 [info ] [MainThread]: Running with dbt=1.10.5
+[0m21:58:33.871821 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/fabio_oliveira/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/fabio_oliveira/Git/dbt_learn/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt run-operation learn_variables', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m21:58:34.331750 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '388af7d6-c906-486e-bd3a-dcdc38459988', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa213e724d0>]}
+[0m21:58:34.382326 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '388af7d6-c906-486e-bd3a-dcdc38459988', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa213eaccd0>]}
+[0m21:58:34.383647 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m21:58:34.460732 [debug] [MainThread]: checksum: fa4c2685620973c5adba0a491aa9c06e8cf48c9113a5280b45b6efa706ae8f4b, vars: {}, profile: , target: , version: 1.10.5
+[0m21:58:34.624720 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 1 files changed.
+[0m21:58:34.625236 [debug] [MainThread]: Partial parsing: added file: dbtlearn://macros/variables.sql
+[0m21:58:34.625608 [debug] [MainThread]: Partial parsing: updated file: dbtlearn://macros/logging.sql
+[0m21:58:34.626073 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Reached EOF without finding a close tag for macro (searched from line 1)
+[0m21:58:34.627487 [debug] [MainThread]: Resource report: {"command_name": "run-operation", "command_success": false, "command_wall_clock_time": 0.8024283, "process_in_blocks": "68040", "process_kernel_time": 0.223592, "process_mem_max_rss": "134232", "process_out_blocks": "16", "process_user_time": 1.600822}
+[0m21:58:34.628021 [debug] [MainThread]: Command `dbt run-operation` failed at 21:58:34.627932 after 0.80 seconds
+[0m21:58:34.628404 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa213e71110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa213e73350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa2184b9310>]}
+[0m21:58:34.628759 [debug] [MainThread]: Flushing usage events
+[0m21:58:35.629604 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:59:49.817691 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff7014bf150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff7014ae310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff7014aee50>]}
+
+
+============================== 21:59:49.819907 | 78db916c-ae93-46e7-86ad-cb5682e45736 ==============================
+[0m21:59:49.819907 [info ] [MainThread]: Running with dbt=1.10.5
+[0m21:59:49.820499 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/home/fabio_oliveira/.dbt', 'log_path': '/home/fabio_oliveira/Git/dbt_learn/logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run-operation learn_variables', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m21:59:50.117182 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '78db916c-ae93-46e7-86ad-cb5682e45736', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff6ffd30dd0>]}
+[0m21:59:50.166545 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '78db916c-ae93-46e7-86ad-cb5682e45736', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff702470990>]}
+[0m21:59:50.167184 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m21:59:50.239469 [debug] [MainThread]: checksum: fa4c2685620973c5adba0a491aa9c06e8cf48c9113a5280b45b6efa706ae8f4b, vars: {}, profile: , target: , version: 1.10.5
+[0m21:59:50.391229 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 1 files changed.
+[0m21:59:50.391737 [debug] [MainThread]: Partial parsing: added file: dbtlearn://macros/variables.sql
+[0m21:59:50.392111 [debug] [MainThread]: Partial parsing: updated file: dbtlearn://macros/logging.sql
+[0m21:59:50.399142 [error] [MainThread]: Encountered an error:
+Compilation Error
+  expected token 'end of print statement', got 'your_name_jinja'
+    line 2
+      {{ set your_name_jinja="Zoltan"  }}
+[0m21:59:50.399889 [debug] [MainThread]: Resource report: {"command_name": "run-operation", "command_success": false, "command_wall_clock_time": 0.6247913, "process_in_blocks": "8", "process_kernel_time": 0.138902, "process_mem_max_rss": "134644", "process_out_blocks": "56", "process_user_time": 1.51964}
+[0m21:59:50.400466 [debug] [MainThread]: Command `dbt run-operation` failed at 21:59:50.400378 after 0.63 seconds
+[0m21:59:50.400816 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff70150f2d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff70166c610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff705bbcb90>]}
+[0m21:59:50.401177 [debug] [MainThread]: Flushing usage events
+[0m21:59:51.243198 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:14:39.188555 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6439567390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f643991cf50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6439567b50>]}
+
+
+============================== 22:14:39.190775 | 9827748d-529f-4bf9-bd51-fd1f90b5387f ==============================
+[0m22:14:39.190775 [info ] [MainThread]: Running with dbt=1.10.5
+[0m22:14:39.191270 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/home/fabio_oliveira/.dbt', 'log_path': '/home/fabio_oliveira/Git/dbt_learn/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run-operation learn_variables --vars {user_name:Fabio_dbt_teste}', 'send_anonymous_usage_stats': 'True'}
+[0m22:14:39.488954 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9827748d-529f-4bf9-bd51-fd1f90b5387f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6437fdf910>]}
+[0m22:14:39.538805 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9827748d-529f-4bf9-bd51-fd1f90b5387f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f643a5f6110>]}
+[0m22:14:39.539441 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m22:14:39.612034 [debug] [MainThread]: checksum: 4440fc367a312beb37c057ff13b2588d148ddf8be0daf1344d9f92074aa4bec1, vars: {'user_name:Fabio_dbt_teste': None}, profile: , target: , version: 1.10.5
+[0m22:14:39.743843 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m22:14:39.744262 [debug] [MainThread]: previous checksum: 4440fc367a312beb37c057ff13b2588d148ddf8be0daf1344d9f92074aa4bec1, current checksum: fa4c2685620973c5adba0a491aa9c06e8cf48c9113a5280b45b6efa706ae8f4b
+[0m22:14:39.744579 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '9827748d-529f-4bf9-bd51-fd1f90b5387f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f643a56a510>]}
+[0m22:14:41.347078 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+Starting in v1.3, the 'name' of an exposure should contain only letters,
+numbers, and underscores. Exposures support a new property, 'label', which may
+contain spaces, capital letters, and special characters. Executive Dashboard
+does not follow this pattern. Please update the 'name', and use the 'label'
+property for a human-friendly title. This will raise an error in a future
+version of dbt-core.
+[0m22:14:41.347540 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '9827748d-529f-4bf9-bd51-fd1f90b5387f', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6437ca7a10>]}
+[0m22:14:41.465597 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9827748d-529f-4bf9-bd51-fd1f90b5387f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6436bc1090>]}
+[0m22:14:41.580324 [debug] [MainThread]: Wrote artifact WritableManifest to /home/fabio_oliveira/Git/dbt_learn/target/manifest.json
+[0m22:14:41.581779 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/fabio_oliveira/Git/dbt_learn/target/semantic_manifest.json
+[0m22:14:41.597267 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9827748d-529f-4bf9-bd51-fd1f90b5387f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6436bb7d10>]}
+[0m22:14:41.597729 [info ] [MainThread]: Found 8 models, 1 snapshot, 1 analysis, 16 data tests, 1 seed, 3 sources, 1 exposure, 664 macros
+[0m22:14:41.598062 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9827748d-529f-4bf9-bd51-fd1f90b5387f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f643699f690>]}
+[0m22:14:41.598545 [debug] [MainThread]: Acquiring new snowflake connection 'macro_learn_variables'
+[0m22:14:41.601374 [info ] [MainThread]: HelloZoltan
+[0m22:14:41.601835 [debug] [MainThread]: Snowflake adapter: Error running SQL: macro learn_variables
+[0m22:14:41.602138 [debug] [MainThread]: Snowflake adapter: Rolling back transaction.
+[0m22:14:41.602430 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:14:42.962668 [error] [MainThread]: Encountered an error while running operation: Compilation Error
+  Required var 'user_name' not found in config:
+  Vars supplied to learn_variables = {
+      "user_name:Fabio_dbt_teste": null
+  }
+  
+  > in macro learn_variables (macros/variables.sql)
+  > called by <Unknown>
+[0m22:14:42.971234 [debug] [MainThread]: Traceback (most recent call last):
+  File "/home/fabio_oliveira/Git/dbt_learn/.venv/lib/python3.11/site-packages/dbt/task/run_operation.py", line 64, in run
+    self._run_unsafe(package_name, macro_name)
+  File "/home/fabio_oliveira/Git/dbt_learn/.venv/lib/python3.11/site-packages/dbt/task/run_operation.py", line 45, in _run_unsafe
+    res = adapter.execute_macro(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fabio_oliveira/Git/dbt_learn/.venv/lib/python3.11/site-packages/dbt/adapters/base/impl.py", line 1287, in execute_macro
+    result = macro_function(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fabio_oliveira/Git/dbt_learn/.venv/lib/python3.11/site-packages/dbt_common/clients/jinja.py", line 427, in __call__
+    return self.call_macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fabio_oliveira/Git/dbt_learn/.venv/lib/python3.11/site-packages/dbt_common/clients/jinja.py", line 395, in call_macro
+    return macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fabio_oliveira/Git/dbt_learn/.venv/lib/python3.11/site-packages/jinja2/runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fabio_oliveira/Git/dbt_learn/.venv/lib/python3.11/site-packages/jinja2/runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "<template>", line 26, in macro
+  File "/home/fabio_oliveira/Git/dbt_learn/.venv/lib/python3.11/site-packages/jinja2/sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fabio_oliveira/Git/dbt_learn/.venv/lib/python3.11/site-packages/jinja2/runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fabio_oliveira/Git/dbt_learn/.venv/lib/python3.11/site-packages/dbt/context/base.py", line 184, in __call__
+    return self.get_missing_var(var_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fabio_oliveira/Git/dbt_learn/.venv/lib/python3.11/site-packages/dbt/context/base.py", line 165, in get_missing_var
+    raise RequiredVarNotFoundError(var_name, dict(self._merged), self._node)
+dbt.exceptions.RequiredVarNotFoundError: Compilation Error
+  Required var 'user_name' not found in config:
+  Vars supplied to learn_variables = {
+      "user_name:Fabio_dbt_teste": null
+  }
+  
+  > in macro learn_variables (macros/variables.sql)
+  > called by <Unknown>
+
+[0m22:14:42.977065 [debug] [MainThread]: Wrote artifact RunResultsArtifact to /home/fabio_oliveira/Git/dbt_learn/target/run_results.json
+[0m22:14:42.977650 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ExposureNameDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m22:14:42.978517 [debug] [MainThread]: Resource report: {"command_name": "run-operation", "command_success": false, "command_wall_clock_time": 3.8347735, "process_in_blocks": "1440", "process_kernel_time": 0.168744, "process_mem_max_rss": "154372", "process_out_blocks": "5480", "process_user_time": 3.596402}
+[0m22:14:42.979013 [debug] [MainThread]: Command `dbt run-operation` failed at 22:14:42.978913 after 3.84 seconds
+[0m22:14:42.979409 [debug] [MainThread]: Connection 'macro_learn_variables' was left open.
+[0m22:14:42.979770 [debug] [MainThread]: On macro_learn_variables: Close
+[0m22:14:43.333491 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f643dbbd510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f64395a5110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f64395a7290>]}
+[0m22:14:43.335568 [debug] [MainThread]: Flushing usage events
+[0m22:14:44.276915 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:16:32.350823 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f62a3a84090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f62a3a92c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f62a3a848d0>]}
+
+
+============================== 22:16:32.352993 | da991473-ed03-402a-b91c-dda2af76d7ab ==============================
+[0m22:16:32.352993 [info ] [MainThread]: Running with dbt=1.10.5
+[0m22:16:32.353562 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/home/fabio_oliveira/Git/dbt_learn/logs', 'fail_fast': 'False', 'profiles_dir': '/home/fabio_oliveira/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt run-operation learn_variables --vars {user_name:Fabio_dbt_teste}', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:16:32.646556 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'da991473-ed03-402a-b91c-dda2af76d7ab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f62a40710d0>]}
+[0m22:16:32.695124 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'da991473-ed03-402a-b91c-dda2af76d7ab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f62a4a40b10>]}
+[0m22:16:32.695733 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m22:16:32.767238 [debug] [MainThread]: checksum: 4440fc367a312beb37c057ff13b2588d148ddf8be0daf1344d9f92074aa4bec1, vars: {'user_name:Fabio_dbt_teste': None}, profile: , target: , version: 1.10.5
+[0m22:16:32.914336 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m22:16:32.914709 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m22:16:32.987995 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'da991473-ed03-402a-b91c-dda2af76d7ab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f62a2168090>]}
+[0m22:16:33.107744 [debug] [MainThread]: Wrote artifact WritableManifest to /home/fabio_oliveira/Git/dbt_learn/target/manifest.json
+[0m22:16:33.109141 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/fabio_oliveira/Git/dbt_learn/target/semantic_manifest.json
+[0m22:16:33.117423 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'da991473-ed03-402a-b91c-dda2af76d7ab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f62a1d740d0>]}
+[0m22:16:33.117880 [info ] [MainThread]: Found 8 models, 1 snapshot, 1 analysis, 16 data tests, 1 seed, 3 sources, 1 exposure, 664 macros
+[0m22:16:33.118207 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'da991473-ed03-402a-b91c-dda2af76d7ab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f62a24c3f50>]}
+[0m22:16:33.118730 [debug] [MainThread]: Acquiring new snowflake connection 'macro_learn_variables'
+[0m22:16:33.122712 [info ] [MainThread]: HelloZoltan
+[0m22:16:33.123178 [debug] [MainThread]: Snowflake adapter: Error running SQL: macro learn_variables
+[0m22:16:33.123484 [debug] [MainThread]: Snowflake adapter: Rolling back transaction.
+[0m22:16:33.123770 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:16:33.923026 [error] [MainThread]: Encountered an error while running operation: Compilation Error
+  Required var 'user_name' not found in config:
+  Vars supplied to learn_variables = {
+      "user_name:Fabio_dbt_teste": null
+  }
+  
+  > in macro learn_variables (macros/variables.sql)
+  > called by <Unknown>
+[0m22:16:33.924448 [debug] [MainThread]: Traceback (most recent call last):
+  File "/home/fabio_oliveira/Git/dbt_learn/.venv/lib/python3.11/site-packages/dbt/task/run_operation.py", line 64, in run
+    self._run_unsafe(package_name, macro_name)
+  File "/home/fabio_oliveira/Git/dbt_learn/.venv/lib/python3.11/site-packages/dbt/task/run_operation.py", line 45, in _run_unsafe
+    res = adapter.execute_macro(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fabio_oliveira/Git/dbt_learn/.venv/lib/python3.11/site-packages/dbt/adapters/base/impl.py", line 1287, in execute_macro
+    result = macro_function(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fabio_oliveira/Git/dbt_learn/.venv/lib/python3.11/site-packages/dbt_common/clients/jinja.py", line 427, in __call__
+    return self.call_macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fabio_oliveira/Git/dbt_learn/.venv/lib/python3.11/site-packages/dbt_common/clients/jinja.py", line 395, in call_macro
+    return macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fabio_oliveira/Git/dbt_learn/.venv/lib/python3.11/site-packages/jinja2/runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fabio_oliveira/Git/dbt_learn/.venv/lib/python3.11/site-packages/jinja2/runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "<template>", line 26, in macro
+  File "/home/fabio_oliveira/Git/dbt_learn/.venv/lib/python3.11/site-packages/jinja2/sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fabio_oliveira/Git/dbt_learn/.venv/lib/python3.11/site-packages/jinja2/runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fabio_oliveira/Git/dbt_learn/.venv/lib/python3.11/site-packages/dbt/context/base.py", line 184, in __call__
+    return self.get_missing_var(var_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fabio_oliveira/Git/dbt_learn/.venv/lib/python3.11/site-packages/dbt/context/base.py", line 165, in get_missing_var
+    raise RequiredVarNotFoundError(var_name, dict(self._merged), self._node)
+dbt.exceptions.RequiredVarNotFoundError: Compilation Error
+  Required var 'user_name' not found in config:
+  Vars supplied to learn_variables = {
+      "user_name:Fabio_dbt_teste": null
+  }
+  
+  > in macro learn_variables (macros/variables.sql)
+  > called by <Unknown>
+
+[0m22:16:33.929992 [debug] [MainThread]: Wrote artifact RunResultsArtifact to /home/fabio_oliveira/Git/dbt_learn/target/run_results.json
+[0m22:16:33.930820 [debug] [MainThread]: Resource report: {"command_name": "run-operation", "command_success": false, "command_wall_clock_time": 1.6221198, "process_in_blocks": "0", "process_kernel_time": 0.147019, "process_mem_max_rss": "141916", "process_out_blocks": "1640", "process_user_time": 1.800761}
+[0m22:16:33.931264 [debug] [MainThread]: Command `dbt run-operation` failed at 22:16:33.931157 after 1.62 seconds
+[0m22:16:33.931622 [debug] [MainThread]: Connection 'macro_learn_variables' was left open.
+[0m22:16:33.931921 [debug] [MainThread]: On macro_learn_variables: Close
+[0m22:16:34.260553 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f62a3ae2790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f62a80b9450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f62a207ded0>]}
+[0m22:16:34.261304 [debug] [MainThread]: Flushing usage events
+[0m22:16:35.250974 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:18:10.335615 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa77069af90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa77069ac10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa770a490d0>]}
+
+
+============================== 22:18:10.337763 | 00913f46-ac2a-4f77-81f5-5650e84b205a ==============================
+[0m22:18:10.337763 [info ] [MainThread]: Running with dbt=1.10.5
+[0m22:18:10.338248 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/fabio_oliveira/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/home/fabio_oliveira/Git/dbt_learn/logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run-operation learn_variables --vars {"user_name":Fabio_dbt_teste}', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:18:10.634927 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '00913f46-ac2a-4f77-81f5-5650e84b205a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa76f0c3e10>]}
+[0m22:18:10.684181 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '00913f46-ac2a-4f77-81f5-5650e84b205a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa771648b50>]}
+[0m22:18:10.684804 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m22:18:10.757295 [debug] [MainThread]: checksum: 773abe6ba04cff2b584c3c30b4a896484db4c8034375e6415e46be81bf15da1b, vars: {'user_name': 'Fabio_dbt_teste'}, profile: , target: , version: 1.10.5
+[0m22:18:10.888490 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m22:18:10.888906 [debug] [MainThread]: previous checksum: 773abe6ba04cff2b584c3c30b4a896484db4c8034375e6415e46be81bf15da1b, current checksum: 4440fc367a312beb37c057ff13b2588d148ddf8be0daf1344d9f92074aa4bec1
+[0m22:18:10.889234 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '00913f46-ac2a-4f77-81f5-5650e84b205a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa770ff4b50>]}
+[0m22:18:12.489796 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+Starting in v1.3, the 'name' of an exposure should contain only letters,
+numbers, and underscores. Exposures support a new property, 'label', which may
+contain spaces, capital letters, and special characters. Executive Dashboard
+does not follow this pattern. Please update the 'name', and use the 'label'
+property for a human-friendly title. This will raise an error in a future
+version of dbt-core.
+[0m22:18:12.490286 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '00913f46-ac2a-4f77-81f5-5650e84b205a', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa76ed6e5d0>]}
+[0m22:18:12.609389 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '00913f46-ac2a-4f77-81f5-5650e84b205a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa76da94550>]}
+[0m22:18:12.723758 [debug] [MainThread]: Wrote artifact WritableManifest to /home/fabio_oliveira/Git/dbt_learn/target/manifest.json
+[0m22:18:12.725147 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/fabio_oliveira/Git/dbt_learn/target/semantic_manifest.json
+[0m22:18:12.733217 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '00913f46-ac2a-4f77-81f5-5650e84b205a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa772d0a310>]}
+[0m22:18:12.733717 [info ] [MainThread]: Found 8 models, 1 snapshot, 1 analysis, 16 data tests, 1 seed, 3 sources, 1 exposure, 664 macros
+[0m22:18:12.734047 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '00913f46-ac2a-4f77-81f5-5650e84b205a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa76da5c610>]}
+[0m22:18:12.734562 [debug] [MainThread]: Acquiring new snowflake connection 'macro_learn_variables'
+[0m22:18:12.737502 [info ] [MainThread]: HelloZoltan
+[0m22:18:12.737850 [info ] [MainThread]: Hello dbt user Fabio_dbt_teste!
+[0m22:18:12.742914 [debug] [MainThread]: Wrote artifact RunResultsArtifact to /home/fabio_oliveira/Git/dbt_learn/target/run_results.json
+[0m22:18:12.743389 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ExposureNameDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m22:18:12.744079 [debug] [MainThread]: Resource report: {"command_name": "run-operation", "command_success": true, "command_wall_clock_time": 2.451311, "process_in_blocks": "0", "process_kernel_time": 0.140239, "process_mem_max_rss": "147384", "process_out_blocks": "3064", "process_user_time": 3.323549}
+[0m22:18:12.744526 [debug] [MainThread]: Command `dbt run-operation` succeeded at 22:18:12.744444 after 2.45 seconds
+[0m22:18:12.744877 [debug] [MainThread]: Connection 'macro_learn_variables' was properly closed.
+[0m22:18:12.745220 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa7706eb690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa7707b93d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa76daa26d0>]}
+[0m22:18:12.745604 [debug] [MainThread]: Flushing usage events
+[0m22:18:13.604156 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:29:19.406113 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3f80fcc8d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3f8124cd10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3f80e91110>]}
+
+
+============================== 22:29:19.408367 | 51c01b40-3c29-4967-b0f8-8e12202f4847 ==============================
+[0m22:29:19.408367 [info ] [MainThread]: Running with dbt=1.10.5
+[0m22:29:19.408882 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/home/fabio_oliveira/Git/dbt_learn/logs', 'debug': 'False', 'profiles_dir': '/home/fabio_oliveira/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt run-operation learn_variables', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:29:19.712858 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '51c01b40-3c29-4967-b0f8-8e12202f4847', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3f8181be50>]}
+[0m22:29:19.767877 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '51c01b40-3c29-4967-b0f8-8e12202f4847', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3f81e4cc50>]}
+[0m22:29:19.768575 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m22:29:19.841448 [debug] [MainThread]: checksum: fa4c2685620973c5adba0a491aa9c06e8cf48c9113a5280b45b6efa706ae8f4b, vars: {}, profile: , target: , version: 1.10.5
+[0m22:29:19.972240 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m22:29:19.972649 [debug] [MainThread]: previous checksum: fa4c2685620973c5adba0a491aa9c06e8cf48c9113a5280b45b6efa706ae8f4b, current checksum: 773abe6ba04cff2b584c3c30b4a896484db4c8034375e6415e46be81bf15da1b
+[0m22:29:19.972944 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m22:29:19.973294 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '51c01b40-3c29-4967-b0f8-8e12202f4847', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3f81e8a7d0>]}
+[0m22:29:21.554647 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+Starting in v1.3, the 'name' of an exposure should contain only letters,
+numbers, and underscores. Exposures support a new property, 'label', which may
+contain spaces, capital letters, and special characters. Executive Dashboard
+does not follow this pattern. Please update the 'name', and use the 'label'
+property for a human-friendly title. This will raise an error in a future
+version of dbt-core.
+[0m22:29:21.555103 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '51c01b40-3c29-4967-b0f8-8e12202f4847', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3f7e3a22d0>]}
+[0m22:29:21.671905 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '51c01b40-3c29-4967-b0f8-8e12202f4847', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3f7e231d10>]}
+[0m22:29:21.786328 [debug] [MainThread]: Wrote artifact WritableManifest to /home/fabio_oliveira/Git/dbt_learn/target/manifest.json
+[0m22:29:21.787677 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/fabio_oliveira/Git/dbt_learn/target/semantic_manifest.json
+[0m22:29:21.795756 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '51c01b40-3c29-4967-b0f8-8e12202f4847', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3f7e13d090>]}
+[0m22:29:21.796213 [info ] [MainThread]: Found 8 models, 1 snapshot, 1 analysis, 16 data tests, 1 seed, 3 sources, 1 exposure, 664 macros
+[0m22:29:21.796591 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '51c01b40-3c29-4967-b0f8-8e12202f4847', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3f7e1a1410>]}
+[0m22:29:21.797073 [debug] [MainThread]: Acquiring new snowflake connection 'macro_learn_variables'
+[0m22:29:21.799920 [info ] [MainThread]: HelloZoltan
+[0m22:29:21.800280 [info ] [MainThread]: Hello dbt user default_user_name_for_this_projecy!
+[0m22:29:21.805209 [debug] [MainThread]: Wrote artifact RunResultsArtifact to /home/fabio_oliveira/Git/dbt_learn/target/run_results.json
+[0m22:29:21.805660 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ExposureNameDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m22:29:21.806350 [debug] [MainThread]: Resource report: {"command_name": "run-operation", "command_success": true, "command_wall_clock_time": 2.442802, "process_in_blocks": "0", "process_kernel_time": 0.143009, "process_mem_max_rss": "147632", "process_out_blocks": "3000", "process_user_time": 3.310841}
+[0m22:29:21.806763 [debug] [MainThread]: Command `dbt run-operation` succeeded at 22:29:21.806682 after 2.44 seconds
+[0m22:29:21.807074 [debug] [MainThread]: Connection 'macro_learn_variables' was properly closed.
+[0m22:29:21.807402 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3f81e01590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3f7f5d4fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3f7f252d50>]}
+[0m22:29:21.807744 [debug] [MainThread]: Flushing usage events
+[0m22:29:22.758152 [debug] [MainThread]: An error was encountered while trying to flush usage events

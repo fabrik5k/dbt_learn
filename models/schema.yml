@@ -34,8 +34,10 @@ models:
           - positive_value
 
   - name: dim_hosts_cleansed
+    description: '{{ doc("dim_hosts_cleansed") }}'
     columns:
       - name: host_id
+        description: The id fo the Host
         tests:
           - not_null
           - unique
@@ -45,16 +47,16 @@ models:
       - name: is_superhost
         tests:
         - accepted_values:
-          values: ['t', 'f']
+            values: ['t', 'f']
 
-  - name: fct_reviews
+  - name: fact_reviews
     columns:
 
       - name: listing_id
         tests:
           - relationships:
-            to: ref('dim_listings_cleansed')
-            field: listing_id
+              to: ref('dim_listings_cleansed')
+              field: listing_id
 
       - name: reviewer_name
         tests:
@@ -63,4 +65,4 @@ models:
       - name: review_sentiment
         tests:
           - accepted_values:
-            values: ['positive', 'neutral', 'negative']
+              values: ['positive', 'neutral', 'negative']

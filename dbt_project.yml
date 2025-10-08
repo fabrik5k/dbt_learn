@@ -18,6 +18,7 @@ seed-paths: ["seeds"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
 asset-paths: ["assets"]
+log-path: "logs"
 
 clean-targets:         # directories to be removed by `dbt clean`
   - "target"
@@ -32,9 +33,13 @@ clean-targets:         # directories to be removed by `dbt clean`
 # files using the `{{ config(...) }}` macro.
 models:
   dbtlearn:
+    +post-hook:
+      - "GRANT SELECT ON {{ this }} TO ROLE REPORTER"
     +materialized: view # Definindo o Padrão de materialização para view
                         # Com isso, tudo dentro do Projeto dbt será materializada como view
     dim:
       +materialized: table # Definindo que tudo dentro do modulo(diretorio) dim será materializada como table
     src:
       +materialized: ephemeral
+vars:
+  user_name: default_user_name_for_this_project

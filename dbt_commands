@@ -2,4 +2,13 @@ dbt run              # Esse comando carrega todos os modelos presente no dbt
 dbt seed             # Carrega todos os seeds (Arquivos Locais enviados pelo dbt ao datawarehouse)
 dbt compile          # Verifica se nao tem nenhum erro de compliação no seu codigo dbt
 dbt source freshness # Analisa o tempo da defasagem das cargas conforme configurado (configurado em sources.yml) 
+dbt snapshot         # Cria uma snapshot dos seus dados, especialmente util em SCD 2.
+dbt test             # Executa os testes definidos do dbt
+dbt docs generate    # Gera a documentação do dbt, ou seja dos modelos, das colunas, tudo que o desenvolvedor documentou
+dbt deps             # Instala as dependencias do projeto dbt, como o dbt_utils usado nesse perojeto, essas dependencias podem ser mais detalhadas em macros, pois em grande maioria são funções feitos por terceiros que podemos reutilizar
+dbt docs serve       # Ele serve a documentação em um servidor web onde podemos ver a documentação detalhada
+dbt snapshot         # Cria uma snapshot dos seus dados
+dbt run-operation    # Executa uma macro só, nao como uma parte de um teste ou um processo
 
+#### Jinja #####
+{{ this }}           # Sempre se refere ao modelo que ta sendo compilado e nao a tabela que esta sendo chamada
